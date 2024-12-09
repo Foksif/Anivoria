@@ -1,0 +1,20 @@
+# Общие исключения
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.swp
+*.tmp
+
+# Бэк:
+
+# AuthService:
+
+/server/auth/node_modules/
+/server/auth/dist/
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.bak
+*.old
