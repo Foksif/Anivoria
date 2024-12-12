@@ -1,4 +1,30 @@
-import { Controller } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  Param,
+  Get,
+  Delete,
+  ParseUUIDPipe,
+} from '@nestjs/common';
+import { UserService } from './user.service';
 
 @Controller('user')
-export class UserController {}
+export class UserController {
+  constructor(private readonly userService: UserService) {}
+
+  @Post()
+  createUser(@Body() dto) {
+    return this.userService.save(dto);
+  }
+
+  @Get(':idOrEmail')
+  findOneUser(@Param('idOrEmail') idOrEmail: string) {
+    return this.userService.findOne(idOrEmail);
+  }
+
+  @Delete(':id')
+  deleteUser(@Param('id', ParseUUIDPipe) id: string) {
+    return this.userService.delete(id);
+  }
+}
