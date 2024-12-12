@@ -10,8 +10,9 @@ logs/
 
 # AuthService:
 
-/server/auth/node_modules/
-/server/auth/dist/
+/server/node_modules/
+/server/dist/
+/server/.env
 
 # IDE и редакторы
 .idea/
