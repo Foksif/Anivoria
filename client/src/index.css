@@ -1,0 +1,71 @@
+/* Обнуление стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 1.5;
+	background-color: #fff;
+	color: #000;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	font-weight: normal;
+}
+
+/* Основные элементы */
+
+body {
+	margin: 0;
+	background-color: #212121;
+}
