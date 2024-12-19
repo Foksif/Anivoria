@@ -3,7 +3,7 @@
 
 ## Общая информация
 
-- Base URL: `/api`
+- Base URL: `/`
 - Все ответы возвращаются в формате JSON
 - Аутентификация: JWT токен в заголовке `Authorization: Bearer <token>`
 - Время жизни access token: 1 час (настраивается через JWT_EXPIRE)
